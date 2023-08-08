@@ -41,8 +41,9 @@ public class FileController {
 		return new ResponseEntity<Object>("The File Uploaded, Compared and generated result file Successfully", HttpStatus.OK);
 	}
 	
-	@GetMapping("/greet")
+	@GetMapping("/greet/user")
 	public String greetUser(@RequestParam String name) {
 		return "Hello "+name+" Welcome to Application";
 	}
+	
 }
